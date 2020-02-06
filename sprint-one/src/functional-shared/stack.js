@@ -9,7 +9,7 @@ var Stack = function() {
 
 var extend = function (to, from) {
   for (var key in from) {
-    to[key] = from[key]
+    to[key] = from[key];
   }
 };
 var stackMethods = {};
