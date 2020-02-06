@@ -1,7 +1,5 @@
 var Queue = function() {
   var someInstance = {};
-
-  // Use an object with numeric keys to store values
   var storage = {}; // property within Queue
   var head = 0;
   var tail = 0;
@@ -32,18 +30,3 @@ var Queue = function() {
   return someInstance;
 };
 
-//Process:
-
-//Specification: I - value (data type: string) O - someInstance (object);
-  // Constraints:
-  // Edge Cases:
-//Justification: The purpose of the function is to store the given
-  // value at the end of the storage object
-  // when Queue is invoked, it creates an instance of the class
-  // class
-//Explanation
-  // the relationship between the input and output: there is n
-//Visualization
-//Approximation
-//Verification
-//Implementation
