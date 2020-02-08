@@ -6,7 +6,7 @@ var LinkedList = function() {
   list.addToTail = function(value) {
     // create a new instance of node object and assign it to newNode variable
     var newNode = Node(value);
-
+    // constant time complexity
     // if the list is empty
     if (list.head === null) {
       // current newNode is the tail
@@ -21,6 +21,7 @@ var LinkedList = function() {
     }
   };
 
+  // constant time complexity
   list.removeHead = function() {
     // access the current head and save it to oldhead variable
     var oldHead = list.head.value;
@@ -30,6 +31,7 @@ var LinkedList = function() {
     return oldHead;
   };
 
+  // linear time complexity
   list.contains = function(target) {
     // create a recursive helper function that takes a node
     var recurse = function(node) {
