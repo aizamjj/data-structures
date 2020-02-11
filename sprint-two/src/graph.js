@@ -2,6 +2,10 @@
 
 // Instantiate a new graph
 var Graph = function() {
+  // create a variable called newGraph for a new instance and set to empty
+  this.newGraph = {};
+  // graph will have properties  at Graph.prototype
+
 };
 
 // Add a node to the graph, passing in the node's value.
@@ -31,6 +35,13 @@ Graph.prototype.removeEdge = function(fromNode, toNode) {
 // Pass in a callback which will be executed on each node of the graph.
 Graph.prototype.forEachNode = function(cb) {
 };
+
+// create a variable Node for the new instance of node
+var Node = function(value) {
+  this.value = value;
+  this.edge = [];
+};
+
 
 /*
  * Complexity: What is the time complexity of the above functions?

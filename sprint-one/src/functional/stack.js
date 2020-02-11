@@ -6,7 +6,7 @@ var Stack = function() {
   var count = 0;
 
   someInstance.push = function(value) {
-    storage[count++] = value; // value = 4; storage: {0: 4} count = 0; 
+    storage[count++] = value; // value = 4; storage: {0: 4} count = 0;
   };
 
   someInstance.pop = function() {
@@ -18,10 +18,22 @@ var Stack = function() {
     // return the element
     return result;
   };
-  
+
   someInstance.size = function() {
     return count;
   };
 
   return someInstance;
 };
+
+var stack = Stack();
+// console.log(stack.size());
+// console.log(stack.push('a'));
+
+// stack.push('a');
+// stack.size();
+// stack.pop();
+// stack.size();
+
+// stack.push('b');
+// stack.size();

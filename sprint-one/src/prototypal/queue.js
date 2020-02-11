@@ -30,3 +30,4 @@ queueMethods.size = function () {
 
 
 
+var queue = Queue();

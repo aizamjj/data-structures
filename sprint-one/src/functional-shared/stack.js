@@ -1,10 +1,10 @@
 var Stack = function() {
   var newInstance = {};
-  
+
   newInstance._storage = {};
   newInstance._count = 0;
   _.extend(newInstance, stackMethods);
-  
+
   return newInstance;
 };
 var stackMethods = {};
