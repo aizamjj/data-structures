@@ -6,15 +6,8 @@ var Queue = function() {
   newInstance.head = 0;
   // create a tail variable and set to 0
   newInstance.tail = 0;
-  extend(newInstance, queueMethods);
-
-  return newInstance;
-};
-
-var extend = function(to, from) {
-  for (var key in from) {
-    to[key] = from[key];
-  }
+  // add the queueMethods as properties into newInstance object
+  _.extend(newInstance, queueMethods);
 };
 //create an object for all the methods to be stored in that is shareable across all instances
 var queueMethods = {};
@@ -51,5 +44,3 @@ queueMethods.size = function () {
 // 		○ Using sample data, walk through the pseudocode to verify the plan works
 // 	- Implementation
 // Easiest part, start coding
-
-
